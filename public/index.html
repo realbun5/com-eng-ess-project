@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/contentandform.css">
+    <script type="module" src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- calendar -->
+  <div class="div-table">
+    <table id="calendar">
+      <tr id="month-year" class="tr">
+        <th colspan="5">
+          Month
+          <select id="select-month" name="select-month">
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">June</option>
+            <option value="6">July</option>
+            <option value="7">August</option>
+            <option value="8">September</option>
+            <option value="9">October</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+          </select>
+        </th>
+        <th colspan="2">
+          Year
+          <select id="select-year" name="select-year">
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+          </select>
+        </th>
+      </tr>
+      <tr id="day-header" class="tr">
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+      </tr>
+      <tr id="row1" class="calendar-row">
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+      </tr>
+      <tr id="row2" class="calendar-row">
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+      </tr>
+      <tr id="row3" class="calendar-row">
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+      </tr>
+      <tr id="row4" class="calendar-row">
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+      </tr>
+      <tr id="row5" class="calendar-row">
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+      </tr>
+      <tr id="row6" class="calendar-row">
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+        <td>
+          <p class="date"></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- timeline -->
+    <div id="div-timeline">
+      <h1 id="date-title" style="text-align: center;"> Date: </h1>
+      <div class="time-line">
+          <div class="vertical-line"></div>
+          <div class="vertical-line"></div>
+          <div class="vertical-line"></div>
+          <div class="vertical-line"></div>
+          <div class="vertical-line"></div>
+      </div>
+      <h2 id="no-content-hidden" class="hidden">No Available Content</h2>
+      <div id="row-container"></div>
+    </div>
+
+    <!-- content -->
+    <div id = "Content_description">
+      <div>
+          <button  id="remove">remove</button>
+      </div>
+      <h3>Content Description</h3>
+      <p id = "content_name">Name: -</p>
+      <p id = "content_des">Description: -</p>
+      <p id= "content_date">Date: -</p>
+      <p id = "content_time">Time: -</p>
+
+      <div id = "Status">
+          <button id = "done">Mark as Done</button>
+          <div id="late">
+              Late
+          </div>
+      </div>
+
+  </div>
+
+<!-- form -->
+  <form id="form">
+    <h3>Create Your new Activity</h1>
+    <div id = "Name">
+      <label>Title: </label><input id="name" placeholder="Add Title" autocomplete="off" />
+      <small class = "alert" id = "name_alert">*fill your title</small>
+      <small class = "alert" id = "name_alert2">*50 limit characters</small>
+    </div>
+    <div id = "Description">
+      <label>Description:</label>
+      <textarea name="" id="description" cols="30" rows="5" placeholder="Add Description"></textarea>
+      <small class = "alert" id = "des_alert" >*fill your description</small>
+      <small class = "alert" id = "des_alert2">*250 limit characters</small>
+    </div>
+    <div id = "Date">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="Start_date" />
+      <small class = "alert" id = "date_alert" >*fill your date</small>
+    </div>
+    <div id = "Time">
+      <label for="start">Start Time:</label>
+      <input
+          type="time"
+          id="start_time"
+          name="appt"
+          min="00:00"
+          max="24:00"
+        />
+      <br>
+      <label for="stop">Stop Time:</label>
+      <input
+          type="time"
+          id="stop_time"
+          name="appt"
+          min="00:00"
+          max="24:00"
+      />
+      <small class = "alert" id = "time_alert" >*fill your start-stop time</small>
+      <small class = "alert" id = "time_alert2" >*stop time should more than start time</small>
+    </div>
+    <input type="submit" id="submit-button" value="Add Content"> 
+  </form>
+</body>
+</html>

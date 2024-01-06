@@ -1,0 +1,90 @@
+/* timeline */
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;400;600&display=swap%22");
+
+.hidden {
+  margin: auto;
+  display: none;
+}
+
+#div-timeline {
+  padding: 20px 50px;
+  margin: 30px 0px;
+  border-style: solid;
+  border-color: transparent;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 0.2);
+  overflow: hidden;
+}
+
+#date-title {
+  text-align: center;
+  color:rgb(76, 112, 255);
+}
+
+#no-content-hidden {
+  padding-top: 20px;
+  text-align: center;
+  color:rgb(255, 0, 0);
+}
+
+#row-container {
+  padding-bottom: 5px
+}
+
+.time-line {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  border-bottom: solid black 4px;
+  background-color: rgb(244, 244, 244);
+  background-color: transparent;
+}
+
+.each-reminder-line {
+  border-width: 4px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.each-reminder-line:hover {
+  color:rgb(76, 112, 255);
+  border-bottom-width: 20px;
+}
+
+.vertical-line {
+  position: relative;
+  height: 20px;
+  width: 4px;
+  top: 12px;
+  background-color: black;
+  color:#2e5984
+}
+
+.vertical-line:after {
+  position: absolute;
+  top: -100%;
+  left: -20px;
+}
+
+.vertical-line:nth-of-type(1):after {
+  content:"00:00"
+}
+
+.vertical-line:nth-of-type(2):after {
+  content:"06:00"
+}
+
+.vertical-line:nth-of-type(3):after {
+  content:"12:00"
+}
+
+.vertical-line:nth-of-type(4):after {
+  content:"18:00";
+}
+
+.vertical-line:nth-of-type(5):after {
+  content:"24:00"
+}
